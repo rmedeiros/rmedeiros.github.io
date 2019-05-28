@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+        <script src="jobs.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "ComputerScience",
+      "url": "https://mycomputersciencefaculty.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://local.mycomputersciencefaculty.com{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+        </script>
+        <title>Computer Science Faculty</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">SciencComp</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Jobs Search<span class="sr-only">(current)</span></a>
+                    </li>     
+                </ul>
+            </div>
+        </nav>
+        <div class="container contact-us">
+            <section id="contact">
+
+                <div class="well well-sm">
+                    <h3><strong>Jobs Search</strong></h3>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <h4><strong>Use Github Jobs Api to find your job in the US</strong></h4>
+                        <form class="gitForm" onsubmit="return false;">
+                            <div class="form-group">
+                                <input type="text" id="description" required class="form-control" name="" value="" placeholder="Job Description">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="location" required class="form-control" name="" value="" placeholder="Location">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="fulltime">
+                                <label class="form-check-label" for="exampleCheck1">Full-time job</label>
+                            </div>
+                            <br/>
+                            <button class="btn btn-primary btn-lg" href="#" role="button" onClick="getJobs()">Submit</button>
+
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <ul id="jobs-list">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer class="container">
+            <p>&copy; MNTI 2018-2019</p>
+        </footer>
+    </body>
+</html>
