@@ -7,7 +7,7 @@ function getJobs(){
             success: function(data){
                 console.log(data);
             },
-            dataType: "jsonp"
+            dataType: "json"
         });    
 
     }else {
