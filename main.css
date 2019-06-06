@@ -35,3 +35,20 @@ h4 {
 .gitForm {
     margin-top: 6vh;
 }
+
+#gifs-list {
+        height: 400px;
+    overflow-y: scroll;
+    list-style: none;
+}
+
+.searchs {
+    margin-top:6vh;
+}
+
+.fas {
+    height: 7vh;
+    width: 7vh;
+    font-size: 7vh
+        
+}
