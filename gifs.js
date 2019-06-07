@@ -32,13 +32,6 @@ function getGifs(){
 }
 
 
-$( "#camera" ).change(function(e) {
-    var file = e.target.files[0];
-    // Do something with the image file.
-    var url = URL.createObjectURL(file);
-   $("#gifs-list").append("<li><img src="+url+"/></li>")
-
-});
 
 
 
@@ -52,4 +45,19 @@ $( document ).ready(function() {
             $("#search-list").append("<li><p>"+elem+"</p></li>")
         })
     }
+    
+    
+ var camera = document.getElementById('upload');
+ var reader = new FileReader ();
+ reader.addEventListener ('load', function () {
+            $("#gifs-list").append("<li><img class='uploaded-photo' alt='uploadedPhoto' src="+reader.result+"></img></li>")
+    }, false);
+  camera.addEventListener('change', function(e) {
+    var file = e.target.files[0];
+    // Do something with the image file.
+    var url = reader.readAsDataURL(file);
+
+  });
 });
+
+

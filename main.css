@@ -47,8 +47,18 @@ h4 {
 }
 
 .fas {
-    height: 7vh;
-    width: 7vh;
-    font-size: 7vh
-        
+    height: 6vh;
+    width: 6vh;
+    font-size: 6vh;
+    margin-left:25%;
+    margin-top: 6vh;
+    cursor:pointer;
 }
+
+label {
+    width: 100%;
+}
+
+
+.uploaded-photo{
+    max-width: 100%;}
