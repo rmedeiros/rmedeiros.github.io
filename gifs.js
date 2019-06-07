@@ -68,7 +68,7 @@ $( document ).ready(function() {
        }else{
             $("fieldset").attr("disabled","disabled");
             
-            $("fieldset").attr("placeholder","Please enable you internet connection");
+            $("#description").attr("placeholder","Please enable you internet connection");
        }
     }, 1 * 1000);  
     
