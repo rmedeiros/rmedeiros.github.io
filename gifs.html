@@ -59,13 +59,15 @@
 
                     <div class="col-md-5">
                         <h4><strong>Use Giphy REST API to search different kind of gifs</strong></h4>
-                        <form class="gitForm" onsubmit="return false;">
-                            <div class="form-group">
-                                <input type="text" id="description" required class="form-control" name="" value="" placeholder="Gif description">
-                            </div>
-                            <br/>
-                            <button class="btn btn-primary btn-lg" href="#" role="button" onClick="getGifs()">Submit</button>
+                        <form class="gitForm" onsubmit="return false;" >
+                            <fieldset disabled="disabled">
 
+                                <div class="form-group">
+                                    <input type="text" id="description" required class="form-control" name="" value="" placeholder="Gif description">
+                                </div>
+                                <br/>
+                                <button class="btn btn-primary btn-lg" href="#" role="button" onClick="getGifs()">Submit</button>
+                            </fieldset>
                         </form>
                         <div class="searchs">
                             <h4><strong>These are you previous searchs:</strong></h4>
